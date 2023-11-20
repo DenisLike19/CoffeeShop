@@ -5,32 +5,32 @@ using Microsoft.AspNetCore.Mvc;
 namespace CoffeeShop.Controllers
 {
     [ApiController]
-    [Route("Clients")]
-        public class ClientController : ControllerBase
+    [Route("Klients")]
+        public class KlientController : ControllerBase
         {
             [HttpGet]
             public IActionResult Get(int id)
             {
                 Up03Context db = new Up03Context();
-                Client? clients = db.Clients.FirstOrDefault(u => u.ClientId == id);
-                if (clients == null) { return NotFound(); }
-                return Ok(clients);
+                Klient? klients = db.Klients.FirstOrDefault(u => u.KlientId == id);
+                if (klients == null) { return NotFound(); }
+                return Ok(klients);
             }
             [HttpPost]
-            public IActionResult Add(Client client)
+            public IActionResult Add(Klient klient)
             {
             Up03Context db = new Up03Context();
-                db.Clients.Add(client);
+                db.Klients.Add(klient);
                 db.SaveChanges();
-                return Ok(client);
+                return Ok(klient);
             }
             [HttpDelete]
             public ActionResult Delete(int id)
             {
             Up03Context db = new Up03Context();
-                Client? emp = db.Clients.FirstOrDefault(u => u.ClientId == id);
+                Klient? emp = db.Klients.FirstOrDefault(u => u.KlientId == id);
                 if (emp == null) return NotFound();
-                db.Clients.Remove(emp);
+                db.Klients.Remove(emp);
                 db.SaveChanges();
                 return Ok();
             }
@@ -39,7 +39,7 @@ namespace CoffeeShop.Controllers
             public IActionResult All()
             {
             Up03Context db = new Up03Context();
-                return Ok(db.Clients);
+                return Ok(db.Klients);
             }
         }
     }

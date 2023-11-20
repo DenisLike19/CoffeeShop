@@ -13,18 +13,18 @@ public partial class Up03Context : DbContext
         : base(options)
     {
     }
-    public virtual DbSet<Client> Clients { get; set; }
+    public virtual DbSet<Klient> Klients { get; set; }
     public virtual DbSet<Good> Goods { get; set; }
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         => optionsBuilder.UseMySQL("Server=127.0.0.1;User=root;Database=up03");
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
-        modelBuilder.Entity<Client>(entity =>
+        modelBuilder.Entity<Klient>(entity =>
         {
-            entity.HasKey(e => e.ClientId).HasName("PRIMARY");
+            entity.HasKey(e => e.KlientId).HasName("PRIMARY");
 
-            entity.ToTable("Client");
+            entity.ToTable("Klient");
 
             entity.Property(e => e.Name).HasMaxLength(100);
             entity.Property(e => e.Surname).HasMaxLength(100);
