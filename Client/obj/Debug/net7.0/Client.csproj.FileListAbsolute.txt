@@ -1,0 +1,7 @@
+C:\Users\student\source\repos\CoffeeShop-tipo-gotovo-no-po-fakty-ne-fakt\Client\obj\Debug\net7.0\Client.csproj.AssemblyReference.cache
+C:\Users\student\source\repos\CoffeeShop-tipo-gotovo-no-po-fakty-ne-fakt\Client\obj\Debug\net7.0\Avalonia\Resources.Inputs.cache
+C:\Users\student\source\repos\CoffeeShop-tipo-gotovo-no-po-fakty-ne-fakt\Client\obj\Debug\net7.0\Avalonia\resources
+C:\Users\student\source\repos\CoffeeShop-tipo-gotovo-no-po-fakty-ne-fakt\Client\obj\Debug\net7.0\Client.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\student\source\repos\CoffeeShop-tipo-gotovo-no-po-fakty-ne-fakt\Client\obj\Debug\net7.0\Client.AssemblyInfoInputs.cache
+C:\Users\student\source\repos\CoffeeShop-tipo-gotovo-no-po-fakty-ne-fakt\Client\obj\Debug\net7.0\Client.AssemblyInfo.cs
+C:\Users\student\source\repos\CoffeeShop-tipo-gotovo-no-po-fakty-ne-fakt\Client\obj\Debug\net7.0\Client.csproj.CoreCompileInputs.cache
